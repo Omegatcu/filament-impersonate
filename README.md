@@ -29,7 +29,8 @@ Go down to the `table` method. After defining the table columns, you want to add
 namespace App\Filament\Resources;
 
 use Filament\Resources\Resource;
-use STS\FilamentImpersonate\Tables\Actions\Impersonate;
+use STS\FilamentImpersonate\Actions\Impersonate; //for Filament 4.x
+use STS\FilamentImpersonate\Tables\Actions\Impersonate; //for Filament 3.x
 
 class UserResource extends Resource {
     public static function table(Table $table)
